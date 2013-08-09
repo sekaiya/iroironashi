@@ -1,0 +1,15 @@
+application: iroironashi
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /data/(.*)
+  static_dir: data/\1
+  
+- url: /lib/(.*)
+  script: lib/\1
+
+- url: /main.php
+  script: main.php
+  
